@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    cout << "Podaj liczbe gosci: ";
+
+    float goscie;
+    float kawalki;
+
+    cin >> goscie;
+
+    cout << "Podaj liczbe kawalkow pizzy: ";
+
+    cin >> kawalki;
+
+    float otrzyma = kawalki / goscie;
+    int aaa = kawalki / goscie;
+
+    if (goscie > kawalki) {
+        cout << "Nie ma wystarczajaco kawalkow dla kazdego\n";
+    }
+    else {
+        cout << "Kazdy z gosci dostanie po " << aaa << " kawalki pizzy\n";
+        cout << "Organizatorowi zostanie jeszcze " << otrzyma - aaa << " pizzy\n";
+    }
+}
